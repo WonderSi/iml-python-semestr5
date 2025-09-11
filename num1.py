@@ -59,6 +59,15 @@ def num_six():
 
     return
 
+
+def num_seven():
+    array = np.ones((10, 10), dtype=int)
+    array[1:-1, 1:-1] = 0
+
+    print(array)
+
+    return
+
 if __name__ == "__main__":
     num_one()
     num_two()
@@ -66,3 +75,4 @@ if __name__ == "__main__":
     num_four()
     num_five()
     num_six()
+    num_seven()
