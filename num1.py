@@ -51,9 +51,18 @@ def num_five():
 
     return
 
+
+def num_six():
+    array = np.arange(30, 42).reshape(3, 4)
+
+    print(array)
+
+    return
+
 if __name__ == "__main__":
     num_one()
     num_two()
     num_three()
     num_four()
     num_five()
+    num_six()
