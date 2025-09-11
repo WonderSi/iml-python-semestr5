@@ -71,6 +71,17 @@ def num_six():
     return
 
 
+def num_seven():
+    array = np.array([0.5, 1.8, 2.1, 3.5, 4.87, 5.13, 6.49])
+    value = 3.09066280756759
+
+    index = np.argmin(np.abs(array - value))
+    closest_value = array[index]
+
+    print(closest_value)
+
+    return
+
 if __name__ == "__main__":
     num_one()
     num_two()
@@ -78,3 +89,4 @@ if __name__ == "__main__":
     num_four()
     num_five()
     num_six()
+    num_seven()
