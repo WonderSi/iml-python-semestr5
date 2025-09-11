@@ -12,8 +12,22 @@ def num_one():
 
     print("Loaded from txt - ", array_txt)
     print("Loaded from bin - ", array_bin)
-    
+
     return
+
+
+def num_two():
+    array_zero = np.zeros(10, dtype=int)
+    array_one = np.ones(10, dtype=int)
+    array_five = np.full(10, 5, dtype=int)
+
+    print(array_zero)
+    print(array_one)
+    print(array_five)
+
+    return
+
 
 if __name__ == "__main__":
     num_one()
+    num_two()
