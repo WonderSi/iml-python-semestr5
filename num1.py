@@ -36,7 +36,16 @@ def num_three():
     return
 
 
+def num_four():
+    array = np.linspace(5, 50, 10, dtype=int)
+
+    print(array)
+
+    return
+
+
 if __name__ == "__main__":
     num_one()
     num_two()
     num_three()
+    num_four()
