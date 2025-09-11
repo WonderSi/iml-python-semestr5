@@ -68,6 +68,15 @@ def num_seven():
 
     return
 
+
+def num_eight():
+    array = np.zeros((5, 5), dtype=int)
+    np.fill_diagonal(array, np.arange(1, 6))
+
+    print(array)
+
+    return
+
 if __name__ == "__main__":
     num_one()
     num_two()
@@ -76,3 +85,4 @@ if __name__ == "__main__":
     num_five()
     num_six()
     num_seven()
+    num_eight()
