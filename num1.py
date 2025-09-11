@@ -77,6 +77,19 @@ def num_eight():
 
     return
 
+
+def num_nine():
+    array = np.zeros((4, 4), dtype=int)
+
+    for i in range(4):
+        for j in range(4):
+            if (i+j) % 2 == 1:
+                array[i, j] = 1
+
+    print(array)
+
+    return
+
 if __name__ == "__main__":
     num_one()
     num_two()
@@ -86,3 +99,4 @@ if __name__ == "__main__":
     num_six()
     num_seven()
     num_eight()
+    num_nine()
