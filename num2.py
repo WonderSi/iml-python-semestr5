@@ -82,6 +82,17 @@ def num_seven():
 
     return
 
+
+def num_eight():
+    array1 = np.array(['Python', 'PHP'])
+    array2 = np.array(['Java', 'C++'])
+
+    result = np.char.add(array1, ' ')
+    result = np.char.add(result, array2)
+
+    print(result) 
+
+
 if __name__ == "__main__":
     num_one()
     num_two()
@@ -90,3 +101,4 @@ if __name__ == "__main__":
     num_five()
     num_six()
     num_seven()
+    num_eight()
