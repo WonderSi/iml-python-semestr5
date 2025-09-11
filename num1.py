@@ -44,8 +44,16 @@ def num_four():
     return
 
 
+def num_five():
+    array = np.random.randint(1, 101, size=(3, 3, 3))
+
+    print(array)
+
+    return
+
 if __name__ == "__main__":
     num_one()
     num_two()
     num_three()
     num_four()
+    num_five()
