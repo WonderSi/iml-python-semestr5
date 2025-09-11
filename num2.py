@@ -101,6 +101,23 @@ def num_nine():
     counts = np.array([s.count('P') for s in array])
     print(counts)
 
+    return
+
+
+def num_ten():
+    # x² - 4x + 7
+    coeffs_a = [1, -4, 7]
+    roots_a = np.roots(coeffs_a)
+
+    # x⁴ - 11x³ + 9x² + 11x - 10
+    coeffs_b = [1, -11, 9, 11, -10]
+    roots_b = np.roots(coeffs_b)
+
+    print(roots_a)
+    print(roots_b)
+
+    return
+
 if __name__ == "__main__":
     num_one()
     num_two()
@@ -111,3 +128,4 @@ if __name__ == "__main__":
     num_seven()
     num_eight()
     num_nine()
+    num_ten()
