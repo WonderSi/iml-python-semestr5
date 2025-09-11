@@ -92,6 +92,14 @@ def num_eight():
 
     print(result) 
 
+    return
+
+
+def num_nine():
+    array = np.array(['Python', 'PHP', 'JS', ' examples', 'html'])
+
+    counts = np.array([s.count('P') for s in array])
+    print(counts)
 
 if __name__ == "__main__":
     num_one()
@@ -102,3 +110,4 @@ if __name__ == "__main__":
     num_six()
     num_seven()
     num_eight()
+    num_nine()
