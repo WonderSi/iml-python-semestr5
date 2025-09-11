@@ -28,6 +28,15 @@ def num_two():
     return
 
 
+def num_three():
+    array = np.arange(30, 71, 2)
+
+    print(array)
+
+    return
+
+
 if __name__ == "__main__":
     num_one()
     num_two()
+    num_three()
