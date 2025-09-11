@@ -36,15 +36,33 @@ def num_three():
 
 
 def num_four():
-    arr = np.array([1, 2, 3, 4])
+    array = np.array([1, 2, 3, 4])
 
     for n in range(1, 4):
-        repeated = np.tile(arr, n)
+        repeated = np.tile(array, n)
         print(f"{n} повторение(я/й):", repeated)
-    pass
+    
+    return
+
+
+def num_five():
+    array1 = np.array([200., 300., np.nan, np.nan, np.nan, 700.])
+    array_clean1 = array1[~np.isnan(array1)]
+
+    array2 = np.array([[1., 2., 3.],
+                [np.nan, 0., np.nan],
+                [6., 7., np.nan]])
+    array_clean2 = array2[~np.isnan(array2)]
+
+    print(array_clean1)
+    print(array_clean2)
+
+    return
+
 
 if __name__ == "__main__":
     num_one()
     num_two()
     num_three()
     num_four()
+    num_five()
