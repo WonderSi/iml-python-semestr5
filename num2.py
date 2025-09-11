@@ -29,13 +29,22 @@ def num_three():
 
     unique_elements, frequencies = np.unique(array, return_counts=True)
 
-    print("Unique elements:", unique_elements)
-    print("Frequencies:", frequencies) 
+    print("Уникальные элементы:", unique_elements)
+    print("Частоты:", frequencies) 
 
     return
 
+
+def num_four():
+    arr = np.array([1, 2, 3, 4])
+
+    for n in range(1, 4):
+        repeated = np.tile(arr, n)
+        print(f"{n} повторение(я/й):", repeated)
+    pass
 
 if __name__ == "__main__":
     num_one()
     num_two()
     num_three()
+    num_four()
