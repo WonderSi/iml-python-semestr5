@@ -60,9 +60,21 @@ def num_five():
     return
 
 
+def num_six():
+    array = np.array([1., 7., 8., 2., 0.1, 3., 15., 2.5])
+    k = 4
+
+    index = np.argpartition(array, k)[:k]
+    smallest_el = np.sort(array[index])
+    print(smallest_el)
+
+    return
+
+
 if __name__ == "__main__":
     num_one()
     num_two()
     num_three()
     num_four()
     num_five()
+    num_six()
