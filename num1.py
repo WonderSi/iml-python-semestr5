@@ -90,6 +90,16 @@ def num_nine():
 
     return
 
+
+def num_ten():
+    start_date = np.datetime64('2017-03-01')
+    end_date = np.datetime64('2017-04-01')
+    array = np.arange(start_date, end_date)
+
+    print(array)
+
+    return
+
 if __name__ == "__main__":
     num_one()
     num_two()
@@ -100,3 +110,4 @@ if __name__ == "__main__":
     num_seven()
     num_eight()
     num_nine()
+    num_ten()
